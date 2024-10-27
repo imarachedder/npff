@@ -1,0 +1,16 @@
+@import 'src/styles/mixins.scss';
+
+.content {
+  box-sizing: border-box;
+  padding: 36px 32px;
+  border-radius: 10px;
+  background-color: #F4F7FA;
+}
+
+.title {
+  @include resetText;
+  font-family: Arial, 'Roboto', Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: normal;
+}

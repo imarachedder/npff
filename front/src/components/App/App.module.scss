@@ -1,0 +1,43 @@
+@import 'src/styles/mixins.scss';
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 100px 0;
+}
+
+.logo {
+  width: 125px;
+  height: 73px;
+  background: url('src/assets/images/logo.png') center / contain no-repeat;
+}
+
+.main {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 38px 100px 85px;
+}
+
+.footer {
+  min-height: 260px;
+  box-sizing: border-box;
+  padding: 116px calc((100vw - 955px)/2);
+  background-color: #F4F7FA;
+}
+
+.navigation {
+  @include resetList;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: normal;
+}
