@@ -85,7 +85,7 @@ class DatasetPredictionView(APIView):
         except Exception as e:
             return JsonResponse({"error": f"Произошла непредвиденная ошибка: {str(e)}"}, status=500)
 
-
+# www
 
     # def post(self, request):
     #     try:
